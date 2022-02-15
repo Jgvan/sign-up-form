@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="odin logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="credits-footer">
+                <p>Photo by Halie West on Unsplash</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="hero-text">
+                <p>This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams.
+                </p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <form action="">
+                <div class="form-input">
+                    <h1>Let's do this!</h1>
+                    <div>
+                        <div>
+                            <label for="firstName">First name: </label>
+                            <input type="text" name="firstName" id="first_name" placeholder="John" required>
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last name:</label>
+                            <input type="text" name="lastName" id="last_name" placeholder="Smith" required
+                                class="focus">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="mail">Email:</label>
+                            <input type="email" name="email" id="mail" placeholder="johnsmith@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" name="phone_number" id="phone" placeholder="+123 456 7890">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="pwd">Password:</label>
+                            <input type="password" name="password" id="pwd" required>
+                            <p id="pwd-error" class="error"></p>
+                        </div>
+                        <div>
+                            <label for="pwd2">Confirm password:</label>
+                            <input type="password" name="password2" id="pwd2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="login">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
